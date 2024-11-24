@@ -21,7 +21,7 @@ function ExpenesList({expenes, onremove}) {
       <tr>
         <th>Id</th>
         <th>Description</th>
-        <th>Catagory</th>
+        <th>Category</th>
         <th>Amount</th>
       </tr>
     </thead>
@@ -32,8 +32,8 @@ function ExpenesList({expenes, onremove}) {
       expenes.map((expenes) => (
         <tr key={expenes.id}>
         <th>{expenes.id}</th>
-        <td>{expenes.catagory}</td>
         <td>{expenes.description}</td>
+        <td>{expenes.category}</td>
         <td>{expenes.amount}</td>
         <td><><button className='btn btn-active btn-neutral' onClick={() => onremove(expenes.id)}>Remove</button></></td>
       </tr>
